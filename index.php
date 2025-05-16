@@ -33,7 +33,6 @@ MercadoPagoConfig::setAccessToken("");
             <div class="menu">
                 <nav>
                     <ul>
-                        <li><a href="#">Inicio</a></li>
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Productos</a></li>
                         <!-- <li><a href="#">Obras</a></li> -->
@@ -99,21 +98,23 @@ MercadoPagoConfig::setAccessToken("");
         </section>
 
         <section class="second">
-            <div class="about contenedor">
-                <h1>Alfajores de calidad premium a bajo precio</h1>
-                <p>La Recova es una empresa familiar dedicada a la elaboración de productos de primera calidad. Tales como Alfajores de Chocolate Negro, Alfajores de chocolate Blanco, Alfajores de Limón y Dulce de leche.</p>
-                <a href="#" class="btn__about btn__green">Comprar</a>
-            </div>
-            <div class="about__img">
-                <img src="/src/img/about-1.png" alt="">
-                <img src="/src/img/about-2.png" alt="">
+            <div class="contenedor">
+                <div class="about">
+                    <h1>Alfajores de calidad premium a bajo precio</h1>
+                    <p>La Recova es una empresa familiar dedicada a la elaboración de productos de primera calidad. Tales como Alfajores de Chocolate Negro, Alfajores de chocolate Blanco, Alfajores de Limón y Dulce de leche.</p>
+                    <a href="#" class="btn__about btn__green">Comprar</a>
+                </div>
+                <div class="about__img">
+                    <img src="/src/img/about-1.png" alt="">
+                    <img src="/src/img/about-2.png" alt="">
+                </div>
             </div>
         </section>
 
         <footer>
             <div class="footer contenedor">
                 <p>AlfaShop. Todos los derechos reservados.</p>
-            </div>            
+            </div>
         </footer>
 
     </main>
