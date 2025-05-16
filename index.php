@@ -33,8 +33,8 @@ MercadoPagoConfig::setAccessToken("");
             <div class="menu">
                 <nav>
                     <ul>
-                        <li><a href="#">Sobre</a></li>
                         <li><a href="#">Productos</a></li>
+                        <li><a href="#">Envios</a></li>
                         <!-- <li><a href="#">Obras</a></li> -->
                         <li><a href="#">Contacto</a></li>
                     </ul>
@@ -49,13 +49,15 @@ MercadoPagoConfig::setAccessToken("");
             </div>
         </div>
     </header>
+    <div class="scroll-trigger"></div>
     <main>
         <!-- HERO -->
         <div class="hero">
             <div class="hero__column contenedor">
                 <section class="hero__text">
                     <h1>La tienda on line de venta de Alfajores más rica de la web</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nostrum libero ratione recusandae eos ducimus, possimus cumque veritatis repellat quibusdam hic amet architecto inventore quis maiores aliquam, quae aut perspiciatis?</p>
+                    <p>Sabias que Argentina es el mayor consumidor de alfajores del mundo, con más de 900 millones de unidades vendidas al año.</p>
+                    <p>Es que el alfajor no es sólo una de las cosas más ricas del país, es parte de nuestra identidad nacional!</p>
                     <a href="#" class="btn__hero btn__green">Comprar</a>
                 </section>
                 <section class="hero__img">
@@ -118,6 +120,7 @@ MercadoPagoConfig::setAccessToken("");
         </footer>
 
     </main>
+    <script src="/build/js/app.js"></script>
 </body>
 
 </html>
