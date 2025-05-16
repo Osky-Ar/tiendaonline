@@ -517,6 +517,150 @@ header.header-bg {
   gap: 1rem;
 }
 
+.contenido-header {
+  display: flex;
+  justify-content: space-between;
+}
+.contenido-header input {
+  display: none;
+}
+.contenido-header .menu__open {
+  margin: 3rem 2rem 0 0;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .contenido-header .menu__open {
+    display: none;
+  }
+}
+.contenido-header .open {
+  background-color: #FFFFFF;
+  width: 24px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  position: relative;
+  top: 8px;
+}
+.contenido-header .open:before {
+  content: "";
+  background-color: #FFFFFF;
+  width: 24px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  position: relative;
+  top: -9px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+.contenido-header .open:after {
+  content: "";
+  background-color: #FFFFFF;
+  width: 24px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  position: relative;
+  top: 5px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+.contenido-header .menu__movil {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(189, 173, 175, 0.95);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+@media (min-width: 768px) {
+  .contenido-header .menu__movil {
+    display: none;
+  }
+}
+.contenido-header .menu__movil label {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-size: 100%;
+  cursor: pointer;
+}
+.contenido-header .menu__movil .menu__content {
+  position: relative;
+  top: 50%;
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: -170px;
+}
+.contenido-header .menu__movil ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+.contenido-header .menu__movil ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contenido-header .menu__movil ul li {
+  padding: 2rem 0;
+  margin: 0 8rem;
+  border-bottom: 1px solid rgba(247, 247, 247, 0.3);
+}
+.contenido-header .menu__movil ul li a {
+  color: #FFFFFF;
+  transition: color 0.2s;
+}
+.contenido-header .menu__movil ul li:last-of-type {
+  border-bottom: none;
+}
+.contenido-header .menu__effects {
+  opacity: 0;
+  visibility: hidden;
+}
+.contenido-header .menu__effects ul {
+  transform: translateY(0%);
+  transition: all 0.5s;
+}
+.contenido-header #menuMovil:checked ~ .menu__effects {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.contenido-header #menuMovil:checked ~ .menu__effects ul {
+  opacity: 1;
+}
+.contenido-header #menuMovil:checked ~ .menu__open .open {
+  background-color: transparent;
+}
+.contenido-header #menuMovil:checked ~ .menu__open .open:before {
+  content: "";
+  background-color: #FFFFFF;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.contenido-header #menuMovil:checked ~ .menu__open .open:after {
+  content: "";
+  background-color: #FFFFFF;
+  transform: rotate(-45deg);
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.contenido-header #menuMovil:not(:checked) ~ .menu__effects ul {
+  transform: translateY(-30%);
+}
+
 .hero {
   padding: 10rem 0;
   background: #bcadaf;

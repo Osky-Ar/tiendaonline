@@ -35,7 +35,6 @@ MercadoPagoConfig::setAccessToken("");
                     <ul>
                         <li><a href="#">Productos</a></li>
                         <li><a href="#">Envios</a></li>
-                        <!-- <li><a href="#">Obras</a></li> -->
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </nav>
@@ -45,6 +44,20 @@ MercadoPagoConfig::setAccessToken("");
                     <a href="#"><img src="/src/img/facebook-icono.svg" alt=""></a>
                     <a href="#"><img src="/src/img/youtube-icono.svg" alt=""></a>
                     <a href="#"><img src="/src/img/whatsapp-icono.svg" alt=""></a>
+                </div>
+            </div>
+            <input type="checkbox" id="menuMovil"></input>
+            <label for="menuMovil" class="menu__open">
+                <div class="open"></div>
+            </label>
+            <div class="menu__movil menu__effects">
+                <label for="menuMovil"></label>
+                <div class="menu__content">
+                    <ul>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Envios</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
