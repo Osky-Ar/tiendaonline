@@ -30,34 +30,28 @@ MercadoPagoConfig::setAccessToken("");
                     <p>Alfa<span>Shop</span></p>
                 </a>
             </div>
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="#">Envios</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </nav>
-                <a href="#" class="btn__header">Admin</a>
-                <div class="redes-sociales">
-                    <a href="#"><img src="/src/img/instagram-icono.svg" alt=""></a>
-                    <a href="#"><img src="/src/img/facebook-icono.svg" alt=""></a>
-                    <a href="#"><img src="/src/img/youtube-icono.svg" alt=""></a>
-                    <a href="#"><img src="/src/img/whatsapp-icono.svg" alt=""></a>
-                </div>
-            </div>
+            <!-- MENU MOVIL -->
             <input type="checkbox" id="menuMovil"></input>
             <label for="menuMovil" class="menu__open">
                 <div class="open"></div>
             </label>
             <div class="menu__movil menu__effects">
-                <label for="menuMovil"></label>
-                <div class="menu__content">
-                    <ul>
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="#">Envios</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
+                <div class="menu">
+                    <label for="menuMovil"></label>
+                    <nav class="menu__content">
+                        <ul>
+                            <li><a href="#">Productos</a></li>
+                            <li><a href="#">Envios</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="btn__header">Admin</a>
+                    <div class="redes-sociales">
+                        <a href="#"><img src="/src/img/instagram-icono.svg" alt=""></a>
+                        <a href="#"><img src="/src/img/facebook-icono.svg" alt=""></a>
+                        <a href="#"><img src="/src/img/youtube-icono.svg" alt=""></a>
+                        <a href="#"><img src="/src/img/whatsapp-icono.svg" alt=""></a>
+                    </div>
                 </div>
             </div>
         </div>
